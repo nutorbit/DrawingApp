@@ -1,0 +1,7 @@
+pandas==0.23.4
+numpy==1.14.5
+opencv_python==3.4.3.18
+Keras==2.2.4
+Flask==0.12.4
+matplotlib==2.2.3
+flask_cors==3.0.7
