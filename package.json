@@ -1,0 +1,27 @@
+{
+  "name": "DrawingApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "chart.js": "^2.7.0",
+    "connect": "^3.6.3",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.3.0",
+    "keras-js": "^0.3.0",
+    "popper": "^1.0.0",
+    "serve-static": "^1.12.4",
+    "server": "^1.0.0-beta.2",
+    "server-js": "^0.1.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

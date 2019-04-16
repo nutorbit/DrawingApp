@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Draw Digits
+	</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/fileinput.min.css">
+	<link rel='stylesheet' href='css/style.css' type='text/css'>
+</head>
+
+<body>
+	<h1 style='margin-top:100px; font-size: 300%;' align='center'>Draw Digits</h1>
+
+	<!-- button -->
+	<div class='controls'>
+		<div style='margin-top:20px' align='center'>
+			<button onclick='load()' class='btn btn-primary bbox'>Predict</button>
+			<button onclick='clearCanvas()' class='btn btn-primary bbox'>Clear</button>
+		</div>
+	</div>
+
+	<!-- modal -->
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+
+	<!-- loading menu -->
+	<div id="overlay">
+		<div id="loader">
+			<div id="ball"></div>
+			Wait...
+		</div>
+	</div>
+
+	<!-- draw & display -->
+	<div class='dis'>
+		<div class='box'>
+			<canvas style='float: left;' id='input-canvas' width='500' height='500'></canvas>
+			<canvas class='invis' id='input-canvas-centercrop' width='500' height='500'></canvas>
+			<canvas class='invis' id='input-canvas-scaled' width='28' height='28'></canvas>
+		</div>
+		<div class="chart">
+			<canvas id='myChart'></canvas>
+
+			<!-- upload file -->
+			<div style='margin-top:20px' align='center'>
+				<span class="btn btn-default btn-file">
+					<input type='file' name='image' id='input-41' ><br>
+					<!-- <span class="custom-file-control"></span> -->
+					<img class='invis' id='pred' src='data:image/png;base64,+' height='500'>
+				</span>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="bootstrap/js/fileinput.js"></script>
+	<script src="bootstrap/js/plugins/piexif.js"></script>
+	<script src="bootstrap/js/plugins/sortable.js"></script>
+	<script src="bootstrap/js/plugins/purify.js"></script>
+	<script src="bootstrap/themes/fa/theme.js"></script>
+	<script src='node_modules/chart.js/dist/Chart.min.js'></script>
+	<script src="node_modules/axios/dist/axios.min.js"></script>
+	<script src='js/keras.js'></script>
+	<script src='js/main.js'></script>
+
+</body>
+
+</html>
