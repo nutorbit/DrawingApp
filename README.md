@@ -21,6 +21,6 @@ A Computer programming project (2017).
 
 # Image
 
-[](./images/1.png)
+![](./images/1.png)
 
-[](./images/2.png)
+![](./images/2.png)
