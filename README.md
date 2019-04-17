@@ -2,6 +2,8 @@
 
 A Computer programming project (2017).
 
+![](./images/1.png)
+
 # Installation
 
 1. Install python3 & node.js
@@ -19,8 +21,3 @@ A Computer programming project (2017).
 * Digit dection: https://github.com/penny4860/SVHN-deep-digit-detector
 * Drawing and KerasJS: https://github.com/transcranial/keras-js
 
-# Image
-
-![](./images/1.png)
-
-![](./images/2.png)
